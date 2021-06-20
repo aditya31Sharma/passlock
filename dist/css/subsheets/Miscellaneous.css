@@ -1,0 +1,408 @@
+
+/* ----------------------------------------------------
+                    Standards
+---------------------------------------------------- */
+
+@font-face {
+    font-family: "TheBoldFont";
+    src: url("../../fonts/theboldfont.ttf");
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+}
+@-webkit-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    25%{background-position:100% 10%}
+    75%{background-position:10% 100%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    25%{background-position:100% 10%}
+    75%{background-position:10% 100%}
+    100%{background-position:0% 90%}
+}
+@keyframes Coolbg {
+    0%{background-position:0% 90%}
+    25%{background-position:100% 10%}
+    75%{background-position:10% 100%}
+    100%{background-position:0% 90%}
+}
+
+    /* width */
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        background: linear-gradient(49deg,#6fff7b,#7bcaff);
+                    border-radius:100px;          
+    }
+  
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background:#151517;
+        border-radius:10px;
+        
+    }
+  
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover{
+        box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                    inset 6px 6px 20px rgba(0,0,0,0.5);
+    }
+  
+/* ----------------------------------------------------
+---------------------------------------------------- */
+
+
+
+
+html,body{
+    margin:0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    background-color: #151517;
+    overflow-x: hidden;
+}
+a{
+    text-decoration:none;
+}
+
+
+
+#acc-logo{
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 15vh;
+    display:block;
+}
+
+
+
+h1{
+    color:#fff;
+    margin: 30px auto;
+    margin-bottom: 100px;
+    max-height:10%;
+    width:100%;
+    max-width:150%;
+    display:inline-block;
+    text-align:center;
+    font-family: TheBoldFont;
+    font-weight: 900;
+    font-size: 65px;
+}
+h1{
+    background: linear-gradient(49deg,#6fff7b,#7bcaff,#ff5eff,#ffc252,yellow);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Coolbg 10s ease infinite;
+    -moz-animation: Coolbg 10s ease infinite;
+    animation: Coolbg 10s ease infinite;
+}
+
+
+#form{
+    text-align: center;
+}
+
+
+
+.back-btn{
+    cursor: pointer;
+    background-color: #151517;
+    outline:none;
+    border: none;
+    color: #fff;
+    padding:10px;
+    margin: 20px auto;
+    width:150px;
+    height: 75px;
+    display:block;
+    text-align:center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: -6px -6px 20px rgba(255,255,255,0.05),
+                6px 6px 20px rgba(0,0,0,1);
+}
+.back-btn:hover,.back-btn:focus{
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                inset 6px 6px 20px rgba(0,0,0,1);
+
+                background: -webkit-linear-gradient(315deg, #00ff55 0%, #00c8ff 84%);
+
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+}
+
+
+#content{
+    display:none;
+}
+.js-acc{
+    margin: 30px auto;
+    margin-bottom: 100px;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width:50%;
+    box-shadow: -6px -6px 20px rgba(255,255,255,0.035),
+                6px 6px 20px rgba(0,0,0,0.5);
+}
+
+.js-pass,.js-id,.js-bar,.js-title-left,.js-title-right{
+    outline: none;
+    border: none;
+    cursor:-webkit-grab;
+    color:rgb(0, 0, 0);
+    font-family: Poppins;
+    font-weight: 500;
+
+    padding:30px 10px;
+    margin: 10px 0px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px 100px 100px 20px;
+    align-items: center;
+
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.25),
+                inset 6px 6px 20px rgba(0,0,0,0.75);
+    
+    background: linear-gradient(49deg,#6fff7b,#7bcaff,#ff5eff,
+                #ffc252,yellow);
+
+    background-size: 400% 400%;
+    -webkit-animation: Coolbg 10s ease infinite;
+    -moz-animation: Coolbg 10s ease infinite;
+    animation: Coolbg 10s ease infinite;
+}
+.js-pass{
+    border-radius: 100px 20px 20px 100px;
+}
+.js-title-left{
+    cursor: inherit;
+    margin-right: 0px;
+    padding:10px 10px;
+    padding-right: 15px;
+    padding-left:25%;
+    border-radius:0px 100px 100px 0px;
+    text-align:right;
+    box-shadow: -6px -6px 20px rgba(255,255,255,0.25),
+                6px 6px 20px rgba(0,0,0,5);
+    
+}
+.js-title-right{
+    cursor: inherit;
+    margin-left: 60%;
+    padding:10px 10px;
+    padding-left: 15px;
+    padding-right:25%;
+    border-radius:100px 0px 0px 100px;
+    text-align:left;
+    box-shadow: -6px -6px 20px rgba(255,255,255,0.25),
+                6px 6px 20px rgba(0,0,0,5);
+    
+}
+.title-left-content{
+    margin-left: 20px;
+}
+.title-right-content{
+    margin-right: 20px;
+}
+.js-id:hover,.js-pass:hover,
+.js-id:focus,.js-pass:focus,
+.js-id:active,.js-pass:active
+{
+    background:none;
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                inset 6px 6px 20px rgba(0,0,0,0.75);
+    background-color: #151517;
+    color: #fff;
+}
+.js-bar{
+    padding: 2px 1px;
+    margin-top:44px;
+    width: 40px;
+    height: 10px;
+    border-radius: 0px;
+}
+#pass4,#pass5{
+    border-radius: 100px;
+}
+#id3{
+    padding:30px 10px;
+    font-size: 70%;
+    margin: 10px 0px;
+    width: 200px;
+}
+
+
+/* ----------------------------------------------------
+                    Media Queries
+---------------------------------------------------- */
+
+@media screen and (max-width: 964px){
+    .js-acc{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 876px){
+    .js-acc{
+        width: 75%;
+    }
+    #password-input::placeholder{
+        font-size:70%;
+    }
+}
+@media screen and (max-width: 640px){
+    .js-acc{
+        width: 90%;
+        margin-bottom: 75px !important;
+    }
+    #password-input::placeholder{
+        font-size:60%;
+    }
+    .js-title-right{
+        margin-left: 40%;
+    }
+
+    .title-left-content,.title-right-content{
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width: 536px){
+    .js-acc{
+        width: 90%;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .js-bar{
+        margin-top:32px;
+    }
+    .js-pass,.js-id,#id3{
+        width: 150px;
+        font-size: 60%;
+        padding:20px 20px;
+    }
+    #password-input::placeholder{
+        font-size:50%;
+    }
+    #id3{
+        font-size: 50%;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 40px;
+    }
+    .js-bar{
+        width: 30px;
+        margin-top: 26px;
+    }
+    .js-pass,.js-id,#id3{
+        width: 130px;
+        font-size: 50%;
+        padding:15px 15px;
+    }
+    #id3{
+        font-size: 45%;
+        padding-top: 16px;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 440px){
+    h1{
+        font-size: 40px;
+    }
+    .js-pass,.js-id,#id3{
+        width: 130px;
+        font-size: 50%;
+        padding:20px 10px;
+    }
+    .js-bar{
+        height:6px;
+        width:20px;
+        margin-top: 30px;
+    }
+    #password-input::placeholder{
+        width:100%;
+        overflow:visible;
+        font-size:45%;
+    }
+    .js-title-right{
+        margin-left: 30%;
+    }
+    #id3{
+        font-size: 45%;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 380px){
+    .js-pass,.js-id,#id3{
+        width: 120px;
+    }
+    .js-title-right{
+        margin-left: 20%;
+    }
+    #id3{
+        font-size: 40%;
+    }
+@media screen and (max-width: 350px){
+    .js-pass,.js-id,#id3{
+        width: 110px;
+        font-size: 40%;
+    }
+    #password-input::placeholder{
+        width:100%;
+        overflow:visible;
+        font-size:40%;
+    }
+    #id3{
+        font-size: 35%;
+        padding-right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 566px) {
+    h1{
+        font-size: 50px;
+    }
+    .back-btn{
+        transform:scale(0.8);
+    }
+}
+@media screen and (max-width: 434px){
+    h1{
+        font-size:40px;
+    }
+}
+@media screen and (max-width: 350px){
+    h1{
+        font-size:35px;
+    }
+}
+}

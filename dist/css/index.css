@@ -1,0 +1,222 @@
+/* ----------------------------------------------------
+                    Standards
+---------------------------------------------------- */
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.ttf");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "TheBoldFont";
+    src: url("../fonts/theboldfont.ttf");
+    font-style: normal;
+    font-weight: 900;
+}
+@-webkit-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+
+ /* width */
+ ::-webkit-scrollbar
+ {
+     width: 10px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+     background: linear-gradient(49deg,#6fff7b,#7bcaff);
+                 border-radius:100px;          
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+     background:#151517;
+     border-radius:10px;
+     
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover{
+     box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                 inset 6px 6px 20px rgba(0,0,0,0.5);
+ }
+
+/* ----------------------------------------------------
+---------------------------------------------------- */
+
+
+
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #151517;
+    margin: 0px;
+   
+}
+span{
+    display: inline-block;
+    padding:0px;
+    margin:0px;
+}
+a{
+    text-decoration:none;
+}
+
+
+#main-logo{
+    width:25%;
+}
+h1{
+
+    padding:30px;
+    margin: 30px auto;
+    max-height:10%;
+    width:100%;
+    max-width:150%;
+    margin-top: 10vh;
+    display:inline-block;
+    text-align:center;
+    font-family: TheBoldFont;
+    font-weight: 900;
+    font-size: 65px;
+}
+#PASS{
+    color:#151517;
+    background: linear-gradient(49deg,#6fff7b,#7bcaff,#ff5eff,#ffc252,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    background-size: 400% 400%;
+    -webkit-animation: Coolbg 5s ease infinite;
+    -moz-animation: Coolbg 5s ease infinite;
+    animation: Coolbg 5s ease infinite;
+}
+#LOCK{
+    background: linear-gradient(49deg,#6fff7b,#7bcaff,#ff5eff,#ffc252,yellow);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: Coolbg 5s ease infinite;
+    -moz-animation: Coolbg 5s ease infinite;
+    animation: Coolbg 5s ease infinite;
+}
+
+
+
+
+.accounts,.h1container{
+    margin: 0 auto;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width:90%;
+}
+.account-image{
+    width:50px;
+}
+.samsunglogo{
+    width: 75px;
+}
+.samsung{
+    padding-top:25px;
+    height:125px
+}
+
+article{
+    color: white;
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 20px;
+    padding:50px 50px;
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: -6px -6px 20px rgba(255,255,255,0.035),
+                6px 6px 20px rgba(0,0,0,0.5);
+
+    transition: all 0.5s;
+}
+article:hover,article:active,article:focus{
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                inset 6px 6px 20px rgba(0,0,0,0.5);
+    transition:all 0.5s;
+}
+.acc-title{
+    transition:all 0.5s;
+}
+article:hover > .acc-title ,article:focus > .acc-title{
+    background: -webkit-linear-gradient(315deg, #00ff55 0%, #00c8ff 84%);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+}
+
+
+
+/* ----------------------------------------------------
+                    Media Queries
+---------------------------------------------------- */
+@media screen and (max-width:500px){
+    #main-logo{
+        width:40%;
+    }
+    h1{
+        margin-top: 5vh;
+        padding-top:0px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+h1{
+    font-size: 90px;
+}
+    #main-logo{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width:756px){
+    h1{
+        font-size: 100px;
+    }
+    #main-logo{
+        width:35%;
+    }
+}
+@media screen and (min-width: 756px) {
+    h1{
+        font-size: 120px;
+    }
+    
+}
+@media screen and (min-width: 1000px){
+    h1{
+        font-size: 150px;
+    }
+    #main-logo{
+        width:25%;
+    }
+}
+
